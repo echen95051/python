@@ -3,16 +3,16 @@
 import sys
 import paramiko
 
-username = "pureuser"
-password = "pw"
+username = "root"
+password = "xingguo"
 
 # Opens files in read mode
-f1 = open('purehost.txt',"r")
-f2 = open('cli-pure.txt',"r")
+host = open('host.txt',"r")
+cli = open('cli.txt',"r")
 
 # Creates list based on f1 and f2
-devices = f1.readlines()
-commands = f2.readlines()
+devices = host.readlines()
+commands = cli.readlines()
 
 for device in devices:
     device = device.rstrip()
