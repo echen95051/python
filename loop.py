@@ -29,5 +29,5 @@ for device in devices:
         #data =[]
         #data.append(output)
         ssh.close()
-f1.close()
-f2.close()
+host.close()
+cli.close()
